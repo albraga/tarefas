@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Gerenciador de Tarefas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="tarefas.css" rel="stylesheet"/>
+        <script src="lib/jquery-2.1.0.min.js"></script>
+        <script src="tarefas.js"></script>
+        <script src="appStorage.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <header>Gerenciador de Tarefas </header>
+            <div id="main">
+                <div id="add-task">
+                    <label for="new-task-name">Adicionar tarefa:</label>
+                    <input type="text" id="new-task-name" 
+                           title="Digite o nome de uma tarefa" placeholder="Digite o nome de uma tarefa"/>
+                </div>
+                <ul id="task-list">
+                </ul>
+            </div>
+            <footer>               
+            </footer>
+        </div>
+        <div id="templates" class="hidden">
+            <ul id="task-template">
+                <li class="task">
+                    <div class="tools">
+                        <button class="delete" title="Excluir">&times;</button>
+                        <button class="move-up" title="Para cima">&uarr;</button>
+                        <button class="move-down" title="Para baixo">&darr;</button>
+                    </div>
+                    <span class="task-name"></span>
+                    <input type="text" class="hidden"/>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

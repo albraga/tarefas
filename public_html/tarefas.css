@@ -1,0 +1,98 @@
+body {
+    font: 1em Verdana, Geneva, sans-serif;
+    padding: 0;
+    margin: 5px;
+    color: black;
+    background-color: whitesmoke;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#app {
+    width: 36em;
+    margin: 0 auto;
+    background-color: hsla(29, 100%, 96%, 0.86);
+}
+
+#app>header {
+    padding: 0 0.5em;
+    font-size: 1.5em;
+    color: whitesmoke;
+    background-color: #006;
+}
+
+#app>footer {
+    padding: 0.25em;
+    color: whitesmoke;
+    background-color: #006;
+}
+
+#main {
+    max-width: 35em;
+    min-width: 9em;
+    margin: 1em auto;
+}
+
+#new-task-name {
+    width: 30em;
+}
+
+#task-list .task {
+    width: 32em;
+    height: 2em;
+    position: relative;
+    list-style: upper-roman;
+    padding-top: 1em;
+    padding-left: 0.25em;
+    margin: 0.5em;
+    background-color: beige;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+#task-list .task .tools {
+    position: absolute;
+    top: 0.25em;
+    right: 0.25em;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 0.2em;
+}
+
+#task-list .task .tools button {
+    margin: 0;
+    padding: 0;
+    width: 2.5em;
+    height: 2.5em;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.task-name {
+    font-size: 1em;
+    display: block;
+    width: 98%;
+}
+
+.delete {
+
+}
+
+.move-up {
+
+}
+
+.move-down {
+
+}
